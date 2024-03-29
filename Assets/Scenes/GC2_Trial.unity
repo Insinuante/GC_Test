@@ -2456,7 +2456,7 @@ MonoBehaviour:
         m_FootOffset: 0
         m_FootMask:
           serializedVersion: 2
-          m_Bits: 4294967291
+          m_Bits: 59
         m_SmoothTime: 0.25
     - rid: 8048257504811155498
       type: {class: RigLean, ns: GameCreator.Runtime.Characters.IK, asm: GameCreator.Runtime.Core}
@@ -9058,7 +9058,7 @@ MonoBehaviour:
         m_FootOffset: 0
         m_FootMask:
           serializedVersion: 2
-          m_Bits: 4294967291
+          m_Bits: 59
         m_SmoothTime: 0.25
     - rid: 8048257504811155467
       type: {class: RigLean, ns: GameCreator.Runtime.Characters.IK, asm: GameCreator.Runtime.Core}
