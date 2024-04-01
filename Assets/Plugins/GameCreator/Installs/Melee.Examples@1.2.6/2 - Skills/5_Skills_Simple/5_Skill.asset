@@ -35,7 +35,7 @@ MonoBehaviour:
       m_AvatarMask: {fileID: 0}
     m_Layer: 6
   m_Strike:
-    m_Direction: 3
+    m_Direction: 0
     m_Predictions: 1
     m_UseStrikers: 0
     m_Id:
@@ -76,7 +76,7 @@ MonoBehaviour:
         rid: 4340017105353311035
   m_Animation: {fileID: 7400000, guid: de529716928cb45ac8b21f0bf5ee380c, type: 2}
   m_Mask: {fileID: 0}
-  m_Motion: 0
+  m_Motion: 1
   m_SyncReaction: {fileID: 0}
   m_Gravity: 1
   m_TransitionIn: 0.35
@@ -193,22 +193,22 @@ MonoBehaviour:
     - rid: 4340017105353311023
       type: {class: ClipMeleePhases, ns: GameCreator.Runtime.Melee, asm: GameCreator.Runtime.Melee}
       data:
-        m_Time: 0.3
-        m_Duration: 0.3
+        m_Time: 0.2888889
+        m_Duration: 0.31111112
     - rid: 4340017105353311024
       type: {class: ClipMeleeCancel, ns: GameCreator.Runtime.Melee, asm: GameCreator.Runtime.Melee}
       data:
-        m_Time: 0.20000002
-        m_Duration: 0.5
+        m_Time: 0.2888889
+        m_Duration: 0.31111112
     - rid: 4340017105353311025
       type: {class: ClipMeleeRootMotionPosition, ns: GameCreator.Runtime.Melee, asm: GameCreator.Runtime.Melee}
       data:
-        m_Time: 0.3
+        m_Time: 1
         m_Duration: 0
     - rid: 4340017105353311026
       type: {class: ClipMeleeRootMotionRotation, ns: GameCreator.Runtime.Melee, asm: GameCreator.Runtime.Melee}
       data:
-        m_Time: 0.3
+        m_Time: 1
         m_Duration: 0
     - rid: 4340017105353311027
       type: {class: ClipMeleeMotionWarping, ns: GameCreator.Runtime.Melee, asm: GameCreator.Runtime.Melee}

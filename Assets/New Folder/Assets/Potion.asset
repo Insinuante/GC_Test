@@ -63,7 +63,7 @@ MonoBehaviour:
     m_List: []
     m_PrefabSocket: {fileID: 0}
   m_Equip:
-    m_IsEquippable: 0
+    m_IsEquippable: 1
     m_Prefab: {fileID: 0}
     m_ConditionsEquip:
       m_Conditions:

@@ -49,6 +49,70 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 4194225667951296825
+      type: {class: GetDecimalInventoryBagAmountItem, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_Bag:
+          m_Property:
+            rid: 4194225667951296826
+        m_Item:
+          m_Property:
+            rid: 4194225667951296827
+    - rid: 4194225667951296826
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 4194225667951296827
+      type: {class: GetItemInstance, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_Item: {fileID: 11400000, guid: 69386ef38ca0f4480979ec0be26851d2, type: 2}
+    - rid: 4194225670407586662
+      type: {class: InstructionQuestsTaskComplete, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Journal:
+          m_Property:
+            rid: 4194225670407586663
+        m_Task:
+          m_Quest: {fileID: 11400000}
+          m_TaskId: 919843664
+        m_WaitToComplete: 0
+    - rid: 4194225670407586663
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 4194225670407586666
+      type: {class: EventStatsAttributeChange, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Target:
+          m_Property:
+            rid: 4194225670407586667
+        m_When: 0
+        m_Attribute: {fileID: 11400000, guid: bbd268ca79e99d7448ae3785d734b100, type: 2}
+    - rid: 4194225670407586667
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 4194225672966111380
+      type: {class: InstructionCommonDebugText, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Message:
+          m_Property:
+            rid: 4194225672966111381
+    - rid: 4194225672966111381
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: hp = 100
+    - rid: 4194225672966111382
+      type: {class: GetDecimalAttributeCurrentValue, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Traits:
+          m_Property:
+            rid: 4194225672966111383
+        m_Attribute: {fileID: 11400000, guid: bbd268ca79e99d7448ae3785d734b100, type: 2}
+    - rid: 4194225672966111383
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
     - rid: 5220484064468795484
       type: {class: InstructionDialoguePlay, ns: GameCreator.Runtime.Dialogue, asm: GameCreator.Runtime.Dialogue}
       data:
@@ -141,16 +205,16 @@ MonoBehaviour:
         m_Sprite:
           m_Property:
             rid: 5220484069369053508
-        m_UseCounter: 0
+        m_UseCounter: 1
         m_CountTo:
           m_Property:
-            rid: 5220484069369053509
+            rid: 4194225672966111382
         m_ValueFrom:
           m_Property:
-            rid: 5220484069369053554
+            rid: 4194225667951296825
         m_CheckWhen:
           m_Event:
-            rid: 5220484069369053552
+            rid: 4194225670407586666
         m_OnActivate:
           m_Instructions:
             m_Instructions: []
@@ -160,7 +224,8 @@ MonoBehaviour:
         m_OnComplete:
           m_Instructions:
             m_Instructions:
-            - rid: 5220484069369053512
+            - rid: 4194225670407586662
+            - rid: 4194225672966111380
         m_OnAbandon:
           m_Instructions:
             m_Instructions: []
@@ -170,7 +235,7 @@ MonoBehaviour:
     - rid: 5220484069369053505
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
-        m_Value: 'Use the Potion '
+        m_Value: 'Use the Potion to heal up to 100 hp '
     - rid: 5220484069369053506
       type: {class: GetStringTextArea, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
@@ -181,43 +246,6 @@ MonoBehaviour:
       data: 
     - rid: 5220484069369053508
       type: {class: GetSpriteNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-      data: 
-    - rid: 5220484069369053509
-      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-      data:
-        m_Value: 100
-    - rid: 5220484069369053512
-      type: {class: InstructionCommonDebugText, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
-      data:
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_Message:
-          m_Property:
-            rid: 5220484069369053513
-    - rid: 5220484069369053513
-      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-      data:
-        m_Value: Healed to 100
-    - rid: 5220484069369053552
-      type: {class: EventStatsAttributeChange, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
-      data:
-        m_Target:
-          m_Property:
-            rid: 5220484069369053553
-        m_When: 0
-        m_Attribute: {fileID: 11400000, guid: bbd268ca79e99d7448ae3785d734b100, type: 2}
-    - rid: 5220484069369053553
-      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
-      data: 
-    - rid: 5220484069369053554
-      type: {class: GetDecimalAttributeCurrentValue, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
-      data:
-        m_Traits:
-          m_Property:
-            rid: 5220484069369053555
-        m_Attribute: {fileID: 11400000, guid: bbd268ca79e99d7448ae3785d734b100, type: 2}
-    - rid: 5220484069369053555
-      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
       data: 
     - rid: 8048257504811155516
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}

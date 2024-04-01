@@ -44124,6 +44124,7 @@ GameObject:
   - component: {fileID: 199569954839013096}
   - component: {fileID: 6072385783388812960}
   - component: {fileID: 6157983723114692925}
+  - component: {fileID: -4035517796682878391}
   m_Layer: 0
   m_Name: DragonPunch
   m_TagString: Untagged
@@ -49092,7 +49093,6 @@ MonoBehaviour:
   m_Instructions:
     m_Instructions:
     - rid: 8048257527239934939
-    - rid: 8048257527239934945
     - rid: 8048257532715860070
   m_TriggerEvent:
     rid: 8048257527239934935
@@ -49138,26 +49138,6 @@ MonoBehaviour:
     - rid: 8048257527239934944
       type: {class: GetGameObjectLastTriggerEnter, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data: 
-    - rid: 8048257527239934945
-      type: {class: InstructionCameraShakeBurst, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
-      data:
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_Camera:
-          m_Property:
-            rid: 8048257527239934946
-        m_Delay: 0
-        m_Duration: 0.1
-        m_ShakeEffect:
-          m_ShakePosition: 1
-          m_ShakeRotation: 0
-          m_Magnitude: 1
-          m_Roughness: 10
-          m_Transform: {fileID: 0}
-          m_Radius: 10
-    - rid: 8048257527239934946
-      type: {class: GetGameObjectCameraMain, ns: GameCreator.Runtime.Cameras, asm: GameCreator.Runtime.Core}
-      data: 
     - rid: 8048257532715860070
       type: {class: InstructionQuestTaskValue, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
       data:
@@ -49181,6 +49161,55 @@ MonoBehaviour:
       type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Value: 1
+--- !u!114 &-4035517796682878391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873886433987638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecd922218e245e2b85d51f9f08338c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Instructions:
+    m_Instructions:
+    - rid: 4194225670407586305
+    - rid: 4194225670407586309
+  m_TriggerEvent:
+    rid: 4194225670407586302
+  references:
+    version: 2
+    RefIds:
+    - rid: 4194225670407586302
+      type: {class: EventOnStart, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 4194225670407586305
+      type: {class: InstructionCommonTimeWait, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Seconds:
+          m_Property:
+            rid: 4194225670407586306
+        m_Mode:
+          m_UpdateTime: 0
+    - rid: 4194225670407586306
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1
+    - rid: 4194225670407586309
+      type: {class: InstructionGameObjectDestroy, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_GameObject:
+          m_Property:
+            rid: 4194225670407586311
+    - rid: 4194225670407586311
+      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
 --- !u!1 &1931102524043194
 GameObject:
   m_ObjectHideFlags: 0
