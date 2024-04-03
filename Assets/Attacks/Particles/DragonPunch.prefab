@@ -49177,6 +49177,7 @@ MonoBehaviour:
     m_Instructions:
     - rid: 4194225670407586305
     - rid: 4194225670407586309
+    - rid: 4194225713817059718
   m_TriggerEvent:
     rid: 4194225670407586302
   references:
@@ -49210,6 +49211,24 @@ MonoBehaviour:
     - rid: 4194225670407586311
       type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data: 
+    - rid: 4194225713817059718
+      type: {class: InstructionCharacterNavigationMoveStop, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Character:
+          m_Property:
+            rid: 4194225713817059719
+        m_Priority:
+          m_Property:
+            rid: 4194225713817059720
+    - rid: 4194225713817059719
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 4194225713817059720
+      type: {class: GetDecimalInteger, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1
 --- !u!1 &1931102524043194
 GameObject:
   m_ObjectHideFlags: 0
