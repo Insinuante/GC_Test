@@ -22,6 +22,7 @@ MonoBehaviour:
       data:
         m_Items:
           m_Items:
+          - {fileID: 11400000, guid: 5be14ee89b71c8c45a365f3f6bb5dc45, type: 2}
           - {fileID: 11400000, guid: c534738dda5903f4b8de4d7f63aac248, type: 2}
           - {fileID: 11400000, guid: 1155f0844a14749a4b3087b785bd30e6, type: 2}
           - {fileID: 11400000, guid: 665d41b4092f3489cb6e5864907aec6d, type: 2}

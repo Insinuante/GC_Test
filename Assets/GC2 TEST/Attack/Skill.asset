@@ -213,7 +213,7 @@ MonoBehaviour:
       type: {class: ClipMeleeCancel, ns: GameCreator.Runtime.Melee, asm: GameCreator.Runtime.Melee}
       data:
         m_Time: 0.17777778
-        m_Duration: 0.5
+        m_Duration: 0.46666667
     - rid: 4194225713817059456
       type: {class: ClipMeleeRootMotionPosition, ns: GameCreator.Runtime.Melee, asm: GameCreator.Runtime.Melee}
       data:

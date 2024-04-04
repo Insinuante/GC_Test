@@ -29466,11 +29466,38 @@ MonoBehaviour:
     - rid: 4194225714453807160
     - rid: 4194225717027537438
     - rid: 4194225717027537441
+    - rid: 346190135123771399
   m_TriggerEvent:
     rid: 4194225714453807158
   references:
     version: 2
     RefIds:
+    - rid: 346190135123771399
+      type: {class: InstructionInventoryCooldownAddItem, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Bag:
+          m_Property:
+            rid: 346190135123771400
+        m_Item:
+          m_Property:
+            rid: 346190135123771402
+    - rid: 346190135123771400
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 346190135123771402
+      type: {class: GetItemGlobalListFromRuntimeItem, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: runtime-item
+          m_Variable: {fileID: 0}
+          m_Select:
+            rid: 346190135123771403
+    - rid: 346190135123771403
+      type: {class: GetPickFirst, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data: 
     - rid: 4194225714453807158
       type: {class: EventOnStart, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
       data: 
