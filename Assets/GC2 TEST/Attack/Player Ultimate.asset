@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 926b1857c61f413faedb2dbfeb093099, type: 3}
-  m_Name: Skill
+  m_Name: Player Ultimate
   m_EditorClassIdentifier: 
   m_Title:
     m_Property:

@@ -28,12 +28,16 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 346190137262080620
+      type: {class: GetAnimationInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: {fileID: 0}
     - rid: 4340017180664922235
       type: {class: NodeBehaviorTreeEntry, ns: GameCreator.Runtime.Behavior, asm: GameCreator.Runtime.Behavior}
       data:
         m_Id:
           m_String: 26d1956b-151c-49e6-815d-cd2d5c44ad5d
-        m_Position: {x: -260, y: 0}
+        m_Position: {x: -263.75, y: 0}
         m_Ports:
           m_Inputs: []
           m_Outputs:
@@ -78,7 +82,7 @@ MonoBehaviour:
       data:
         m_Id:
           m_String: 66d0151a-6935-43b8-90bd-91d2f96abadf
-        m_Position: {x: -260, y: 90}
+        m_Position: {x: -263.75, y: 86}
         m_Ports:
           m_Inputs:
           - rid: 4340017180664922244
@@ -111,7 +115,7 @@ MonoBehaviour:
       data:
         m_Id:
           m_String: 511a213c-08da-4fe7-8952-76593b5dd7a4
-        m_Position: {x: -580, y: 180}
+        m_Position: {x: -580, y: 184}
         m_Ports:
           m_Inputs:
           - rid: 4340017180664922249
@@ -131,7 +135,7 @@ MonoBehaviour:
       data:
         m_Id:
           m_String: 177a7da8-ab89-4ac9-8dfc-4b708c246215
-        m_Position: {x: 50, y: 180}
+        m_Position: {x: 52.5, y: 184}
         m_Ports:
           m_Inputs:
           - rid: 4340017180664922251
@@ -164,7 +168,7 @@ MonoBehaviour:
       data:
         m_Id:
           m_String: 4763a88d-29e3-47a4-9709-92a64ecc542f
-        m_Position: {x: -180, y: 280}
+        m_Position: {x: -175, y: 282}
         m_Ports:
           m_Inputs:
           - rid: 4340017180664922255
@@ -220,7 +224,7 @@ MonoBehaviour:
       data:
         m_Id:
           m_String: 4f05f216-822f-4cc1-be81-d9288403981d
-        m_Position: {x: -310, y: 400}
+        m_Position: {x: -310, y: 402}
         m_Ports:
           m_Inputs:
           - rid: 4340017180664922264
@@ -240,7 +244,7 @@ MonoBehaviour:
       data:
         m_Id:
           m_String: 0707d024-1bae-4c92-8e4d-221b0560f6b9
-        m_Position: {x: -40, y: 400}
+        m_Position: {x: -40, y: 402}
         m_Ports:
           m_Inputs:
           - rid: 4340017180664922266
@@ -266,7 +270,7 @@ MonoBehaviour:
       data:
         m_Id:
           m_String: 2175e8e7-b5bd-4f43-a463-74e722005d24
-        m_Position: {x: 280, y: 280}
+        m_Position: {x: 280, y: 282}
         m_Ports:
           m_Inputs:
           - rid: 4340017180664922268
@@ -302,7 +306,9 @@ MonoBehaviour:
             rid: 4340017180664922272
         m_State:
           m_StateType: 2
-          m_AnimationClip: {fileID: 0}
+          m_AnimationClip:
+            m_Property:
+              rid: 346190137262080620
           m_RuntimeController: {fileID: 0}
           m_State: {fileID: 11400000, guid: 00afd52627d16433c9d96078527cdf66, type: 2}
           m_AvatarMask: {fileID: 0}

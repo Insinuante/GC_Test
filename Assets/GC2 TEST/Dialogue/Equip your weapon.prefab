@@ -110,7 +110,8 @@ MonoBehaviour:
           - rid: 346190128547889476
         m_OnStart:
           m_Instructions:
-            m_Instructions: []
+            m_Instructions:
+            - rid: 346190136065655417
         m_OnFinish:
           m_Instructions:
             m_Instructions: []
@@ -146,3 +147,21 @@ MonoBehaviour:
       type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Value: 3
+    - rid: 346190136065655417
+      type: {class: InstructionInventoryAddItem, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Item:
+          m_Property:
+            rid: 346190136065655418
+        m_Bag:
+          m_Property:
+            rid: 346190136065655419
+    - rid: 346190136065655418
+      type: {class: GetItemInstance, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_Item: {fileID: 11400000, guid: 5be14ee89b71c8c45a365f3f6bb5dc45, type: 2}
+    - rid: 346190136065655419
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 

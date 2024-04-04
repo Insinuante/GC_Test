@@ -9274,43 +9274,43 @@ MonoBehaviour:
       rid: 2641057037989707908
   m_RuntimeData:
     m_Overrides:
-    - rid: 4194225717744238592
-    - rid: 4194225717744238593
+    - rid: 346190137262080652
+    - rid: 346190137262080653
   references:
     version: 2
     RefIds:
-    - rid: 2641057037989707908
-      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-      data:
-        m_Value: 0.5
-    - rid: 4194225717744238592
+    - rid: 346190137262080652
       type: {class: Parameter, ns: GameCreator.Runtime.Behavior, asm: GameCreator.Runtime.Behavior}
       data:
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_Value:
-          rid: 4194225717744238594
+          rid: 346190137262080654
         m_Name: patrol
-    - rid: 4194225717744238593
+    - rid: 346190137262080653
       type: {class: Parameter, ns: GameCreator.Runtime.Behavior, asm: GameCreator.Runtime.Behavior}
       data:
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_Value:
-          rid: 4194225717744238595
+          rid: 346190137262080655
         m_Name: text
-    - rid: 4194225717744238594
+    - rid: 346190137262080654
       type: {class: ValueGameObject, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
       data:
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_Value: {fileID: 1459530690}
-    - rid: 4194225717744238595
+    - rid: 346190137262080655
       type: {class: ValueGameObject, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
       data:
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_Value: {fileID: 1833757793}
+    - rid: 2641057037989707908
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 0.5
 --- !u!114 &1722829519
 MonoBehaviour:
   m_ObjectHideFlags: 0

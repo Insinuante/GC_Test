@@ -78,39 +78,7 @@ MonoBehaviour:
       type: {class: GetDecimalInventoryLastItemEquipProperty, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
       data:
         m_ItemProperty:
-          m_String: 
-    - rid: 346190135123771527
-      type: {class: InstructionInventoryAddItem, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
-      data:
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_Item:
-          m_Property:
-            rid: 346190135123771528
-        m_Bag:
-          m_Property:
-            rid: 346190135123771529
-    - rid: 346190135123771528
-      type: {class: GetItemInstance, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
-      data:
-        m_Item: {fileID: 11400000, guid: 5be14ee89b71c8c45a365f3f6bb5dc45, type: 2}
-    - rid: 346190135123771529
-      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
-      data: 
-    - rid: 346190135123771718
-      type: {class: GetDecimalInventoryLastItemEquipProperty, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
-      data:
-        m_ItemProperty:
           m_String: Metal-Sword
-    - rid: 346190135123771719
-      type: {class: EventInventoryOnEquip, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
-      data:
-        m_Bag:
-          m_Property:
-            rid: 346190135123771720
-    - rid: 346190135123771720
-      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
-      data: 
     - rid: 346190135919641567
       type: {class: InstructionQuestsTaskComplete, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
       data:
@@ -130,6 +98,62 @@ MonoBehaviour:
       type: {class: GetSpriteInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Sprite: {fileID: 21300000, guid: 5d5f8e40a009042d5986a52eb39b7eab, type: 3}
+    - rid: 346190136065655505
+      type: {class: GetDecimalCondition, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Condition:
+          m_Conditions:
+          - rid: 346190136065655508
+        m_True:
+          m_Property:
+            rid: 346190136642896106
+        m_False:
+          m_Property:
+            rid: 346190136065655507
+    - rid: 346190136065655507
+      type: {class: GetDecimalConstantZero, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 346190136065655508
+      type: {class: ConditionInventoryCanEquip, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Sign: 1
+        m_Item:
+          m_Property:
+            rid: 346190136065655625
+        m_Bag:
+          m_Property:
+            rid: 346190136065655510
+    - rid: 346190136065655510
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 346190136065655625
+      type: {class: GetItemInstance, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_Item: {fileID: 11400000, guid: 5be14ee89b71c8c45a365f3f6bb5dc45, type: 2}
+    - rid: 346190136642896106
+      type: {class: GetDecimalConstantOne, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 346190136642896341
+      type: {class: EventInventoryOnEquip, ns: GameCreator.Runtime.Inventory, asm: GameCreator.Runtime.Inventory}
+      data:
+        m_Bag:
+          m_Property:
+            rid: 346190136642896343
+    - rid: 346190136642896343
+      type: {class: GetGameObjectCharactersBone, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data:
+        m_Character:
+          m_Property:
+            rid: 346190136642896344
+        m_Bone:
+          m_Type: 1
+          m_Human: 7
+          m_Path: 
+    - rid: 346190136642896344
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
     - rid: 4194225670407586662
       type: {class: InstructionQuestsTaskComplete, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
       data:
@@ -209,21 +233,20 @@ MonoBehaviour:
         m_Sprite:
           m_Property:
             rid: 346190136065654847
-        m_UseCounter: 0
+        m_UseCounter: 2
         m_CountTo:
           m_Property:
-            rid: 346190135123771718
+            rid: 346190136065655505
         m_ValueFrom:
           m_Property:
             rid: 346190135123771519
         m_CheckWhen:
           m_Event:
-            rid: 346190135123771719
+            rid: 346190136642896341
         m_OnActivate:
           m_Instructions:
             m_Instructions:
             - rid: 346190128547889480
-            - rid: 346190135123771527
         m_OnDeactivate:
           m_Instructions:
             m_Instructions: []

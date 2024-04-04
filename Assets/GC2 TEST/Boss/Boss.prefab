@@ -1386,7 +1386,7 @@ GameObject:
   - component: {fileID: 3973031141231356063}
   - component: {fileID: 4589956071808286348}
   - component: {fileID: 2710595449695768591}
-  - component: {fileID: 8822131291416435737}
+  - component: {fileID: 6918614129475459900}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -1584,7 +1584,7 @@ MonoBehaviour:
         m_Scale: {x: 1, y: 1, z: 1}
         m_SmoothTime: 0.5
         m_Mannequin: {fileID: 3982342504270501591}
-        m_Animator: {fileID: 1186379029496485509}
+        m_Animator: {fileID: 0}
         m_StartState: {fileID: 0}
         m_Reaction: {fileID: 0}
     - rid: 4194225714453807541
@@ -1626,7 +1626,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8822131291416435737
+--- !u!114 &6918614129475459900
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1635,54 +1635,95 @@ MonoBehaviour:
   m_GameObject: {fileID: 3664351425299422581}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c49750489d4645e5b57fdb86adcd649, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ecd922218e245e2b85d51f9f08338c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Graph: {fileID: 11400000, guid: b7d2f9dd8c22644d68ce486bbc08a233, type: 2}
-  m_Loop: 0
-  m_Update: 0
-  m_Interval:
-    m_Property:
-      rid: 2641057037989707908
-  m_RuntimeData:
-    m_Overrides:
-    - rid: 4194225717744238944
-    - rid: 4194225717744238945
+  m_Instructions:
+    m_Instructions:
+    - rid: 346190137262080697
+    - rid: 346190137262080700
+    - rid: 346190137262080708
+  m_TriggerEvent:
+    rid: 346190137262080705
   references:
     version: 2
     RefIds:
-    - rid: 2641057037989707908
+    - rid: 346190137262080697
+      type: {class: InstructionCharacterIKLookStart, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Character:
+          m_Property:
+            rid: 346190137262080698
+        m_Target:
+          m_Property:
+            rid: 346190137262080699
+        m_Priority: 1
+    - rid: 346190137262080698
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 346190137262080699
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 0}
+    - rid: 346190137262080700
+      type: {class: InstructionCharacterNavigationFollowStart, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Character:
+          m_Property:
+            rid: 346190137262080701
+        m_FollowTarget:
+          m_Property:
+            rid: 346190137262080702
+        m_MinDistance:
+          m_Property:
+            rid: 346190137262080703
+        m_MaxDistance:
+          m_Property:
+            rid: 346190137262080704
+    - rid: 346190137262080701
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 346190137262080702
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 346190137262080703
       type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
-        m_Value: 0.5
-    - rid: 4194225717744238944
-      type: {class: Parameter, ns: GameCreator.Runtime.Behavior, asm: GameCreator.Runtime.Behavior}
+        m_Value: 2
+    - rid: 346190137262080704
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 4
+    - rid: 346190137262080705
+      type: {class: EventOnUpdate, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 346190137262080708
+      type: {class: InstructionCommonAudioAmbientPlay, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
       data:
         m_Breakpoint: 0
         m_IsEnabled: 1
-        m_Value:
-          rid: 4194225717744238946
-        m_Name: patrol
-    - rid: 4194225717744238945
-      type: {class: Parameter, ns: GameCreator.Runtime.Behavior, asm: GameCreator.Runtime.Behavior}
+        m_AudioClip:
+          m_Property:
+            rid: 346190137262080709
+        m_Config:
+          m_Volume: 1
+          m_TransitionIn: 0
+          m_UpdateMode: 0
+          m_SpatialBlend: 0
+          m_Target:
+            m_Property:
+              rid: 346190137262080710
+    - rid: 346190137262080709
+      type: {class: GetAudioClip, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_Value:
-          rid: 4194225717744238947
-        m_Name: text
-    - rid: 4194225717744238946
-      type: {class: ValueGameObject, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
-      data:
-        m_Breakpoint: 0
-        m_IsEnabled: 1
         m_Value: {fileID: 0}
-    - rid: 4194225717744238947
-      type: {class: ValueGameObject, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
-      data:
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_Value: {fileID: 0}
+    - rid: 346190137262080710
+      type: {class: GetGameObjectNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
 --- !u!1 &3815531298304624609
 GameObject:
   m_ObjectHideFlags: 0
@@ -3122,7 +3163,7 @@ Transform:
   m_GameObject: {fileID: 7495146213110453922}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.08, z: 0}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
