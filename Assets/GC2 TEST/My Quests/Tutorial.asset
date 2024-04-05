@@ -104,6 +104,7 @@ MonoBehaviour:
         m_Condition:
           m_Conditions:
           - rid: 346190136065655508
+          - rid: 4194225764193796149
         m_True:
           m_Property:
             rid: 346190136642896106
@@ -308,7 +309,8 @@ MonoBehaviour:
             m_Instructions: []
         m_OnComplete:
           m_Instructions:
-            m_Instructions: []
+            m_Instructions:
+            - rid: 4194225764193796151
         m_OnAbandon:
           m_Instructions:
             m_Instructions: []
@@ -318,7 +320,7 @@ MonoBehaviour:
     - rid: 4194225758905303958
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
-        m_Value: 
+        m_Value: 'Investigate where that noise is coming from '
     - rid: 4194225758905303959
       type: {class: GetStringTextArea, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
@@ -347,6 +349,34 @@ MonoBehaviour:
     - rid: 4194225758905303964
       type: {class: EventOnLateUpdate, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
       data: 
+    - rid: 4194225764193796149
+      type: {class: ConditionHasPropAttached, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Sign: 1
+        m_Character:
+          m_Property:
+            rid: 4194225764193796150
+        m_Bone:
+          m_Type: 1
+          m_Human: 18
+          m_Path: 
+    - rid: 4194225764193796150
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 4194225764193796151
+      type: {class: InstructionCommonDebugText, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Message:
+          m_Property:
+            rid: 4194225764193796152
+    - rid: 4194225764193796152
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: Radio has succesfully been turned off
     - rid: 5220484064468795484
       type: {class: InstructionDialoguePlay, ns: GameCreator.Runtime.Dialogue, asm: GameCreator.Runtime.Dialogue}
       data:
