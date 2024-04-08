@@ -113,7 +113,8 @@ MonoBehaviour:
       m_Instructions: []
   m_OnFinish:
     m_Instructions:
-      m_Instructions: []
+      m_Instructions:
+      - rid: 4194225826398208432
   m_CanHit:
     m_Conditions:
       m_Conditions: []
@@ -323,3 +324,17 @@ MonoBehaviour:
       type: {class: GetPositionVector3, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Position: {x: 0, y: -1, z: 0}
+    - rid: 4194225826398208432
+      type: {class: InstructionCommonTimeWait, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Seconds:
+          m_Property:
+            rid: 4194225826398208433
+        m_Mode:
+          m_UpdateTime: 0
+    - rid: 4194225826398208433
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 60

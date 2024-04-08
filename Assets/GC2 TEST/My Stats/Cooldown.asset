@@ -9,43 +9,104 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c4be981628d4fcd80364b5052329739, type: 3}
+  m_Script: {fileID: 11500000, guid: e203efa43fc9420f97b5e0072ce8db68, type: 3}
   m_Name: Cooldown
   m_EditorClassIdentifier: 
-  m_ID:
-    m_String: Cooldown
   m_Data:
-    m_Base: 0
-    m_Formula: {fileID: 0}
+    m_Type: 1
+    m_MaxStack:
+      m_Property:
+        rid: 4194225826398208126
+    m_HasDuration: 0
+    m_IsHidden: 0
+    m_Duration:
+      m_Property:
+        rid: 4194225826398208127
   m_Info:
     m_Name:
       m_Property:
-        rid: 4194225758905303977
+        rid: 4194225826398208128
     m_Acronym:
       m_Property:
-        rid: 4194225758905303978
+        rid: 4194225826398208129
     m_Description:
       m_Property:
-        rid: 4194225758905303979
+        rid: 4194225826398208130
     m_Icon:
       m_Property:
-        rid: 4194225758905303980
+        rid: 4194225826398208131
     m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_OnStart:
+    m_Instructions:
+      m_Instructions:
+      - rid: 4194225826398208132
+  m_OnEnd:
+    m_Instructions:
+      m_Instructions:
+      - rid: 4194225826398208133
+  m_WhileActive:
+    m_Instructions:
+      m_Instructions:
+      - rid: 4194225826398208134
+      - rid: 4194225826398208144
+  m_ID:
+    m_Save:
+      m_Save: 0
+    m_UniqueID:
+      m_SerializedID:
+        m_String: my-unique-id
   references:
     version: 2
     RefIds:
-    - rid: 4194225758905303977
+    - rid: 4194225826398208126
+      type: {class: GetDecimalInteger, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1
+    - rid: 4194225826398208127
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 60
+    - rid: 4194225826398208128
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
-        m_Value: Cooldown
-    - rid: 4194225758905303978
+        m_Value: Status Effect Name
+    - rid: 4194225826398208129
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
-        m_Value: STA
-    - rid: 4194225758905303979
+        m_Value: SE
+    - rid: 4194225826398208130
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Value: Description...
-    - rid: 4194225758905303980
+    - rid: 4194225826398208131
       type: {class: GetSpriteNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 4194225826398208132
+      type: {class: InstructionCommonDebugComment, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Text: Executed right after this Status Effect is applied
+    - rid: 4194225826398208133
+      type: {class: InstructionCommonDebugComment, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Text: Executed right after this Status Effect finishes
+    - rid: 4194225826398208134
+      type: {class: InstructionCommonDebugComment, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Text: Executed over and over again while this Status Effect lasts
+    - rid: 4194225826398208144
+      type: {class: InstructionMeleeTryCancel, ns: GameCreator.Runtime.Melee, asm: GameCreator.Runtime.Melee}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Character:
+          m_Property:
+            rid: 4194225826398208145
+    - rid: 4194225826398208145
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
       data: 
