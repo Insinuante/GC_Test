@@ -73,9 +73,9 @@ MonoBehaviour:
             m_Children: 
         m_Roots: 71c9614e
         m_Roles: []
-        m_DialogueSkin: {fileID: 11400000, guid: 4d17091e135494104b77cf834e70e07b, type: 2}
+        m_DialogueSkin: {fileID: 11400000, guid: ba9a808a451da404890276a7f6a9441f, type: 2}
         m_Time:
-          m_UpdateTime: 1
+          m_UpdateTime: 0
     - rid: 346190128547889472
       type: {class: Node, ns: GameCreator.Runtime.Dialogue, asm: GameCreator.Runtime.Dialogue}
       data:

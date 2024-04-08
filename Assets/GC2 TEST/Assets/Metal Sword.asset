@@ -51,7 +51,19 @@ MonoBehaviour:
     m_CanSellToMerchant: 1
   m_Properties:
     m_InheritFromParent: 1
-    m_List: []
+    m_List:
+    - m_Breakpoint: 0
+      m_IsEnabled: 0
+      m_PropertyID:
+        m_String: Metal-Sword
+      m_Visible: 0
+      m_Hide: 0
+      m_Icon: {fileID: 0}
+      m_Color: {r: 0, g: 0, b: 0, a: 0}
+      m_Number: 0
+      m_Text:
+        m_Property:
+          rid: 4194225830857540398
     m_Overrides:
       m_Keys:
       - m_String: attack
@@ -179,3 +191,7 @@ MonoBehaviour:
       type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_GameObject: {fileID: 8577520562116956334, guid: 93e4a5d73926a4f498287814f97ce155, type: 3}
+    - rid: 4194225830857540398
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 
