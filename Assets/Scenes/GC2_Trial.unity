@@ -7642,7 +7642,12 @@ MonoBehaviour:
   m_OverrideAttributes:
     m_Keys:
     - m_String: Health
+    - m_String: 
     m_Values:
+    - m_IsExpanded: 0
+      m_ChangeStartPercent:
+        m_IsEnabled: 0
+        m_Value: 1
     - m_IsExpanded: 0
       m_ChangeStartPercent:
         m_IsEnabled: 0
@@ -7650,7 +7655,12 @@ MonoBehaviour:
   m_OverrideStats:
     m_Keys:
     - m_String: max-hp
+    - m_String: Ultimate
     m_Values:
+    - m_IsExpanded: 0
+      m_ChangeBase:
+        m_IsEnabled: 0
+        m_Value: 1
     - m_IsExpanded: 0
       m_ChangeBase:
         m_IsEnabled: 0
@@ -18132,15 +18142,15 @@ MonoBehaviour:
     m_Type: 0
     m_Text: {fileID: 0}
     m_TMP: {fileID: 0}
-  m_ImageFill: {fileID: 0}
+  m_ImageFill: {fileID: 1707571594}
   m_ScaleX: {fileID: 0}
   m_ScaleY: {fileID: 0}
-  m_UnitContainer: {fileID: 0}
-  m_UnitPrefab: {fileID: 0}
-  m_UnitMode: 0
+  m_UnitContainer: {fileID: 1707571593}
+  m_UnitPrefab: {fileID: 1707571592}
+  m_UnitMode: 1
   m_UnitValue: 10
-  m_WhenIncrement: 0
-  m_WhenDecrement: 0
+  m_WhenIncrement: 1
+  m_WhenDecrement: 1
   m_StallDuration: 0
   m_TransitionDuration: 0
   references:
@@ -34364,16 +34374,26 @@ MonoBehaviour:
   m_OverrideAttributes:
     m_Keys:
     - m_String: Health
+    - m_String: 
     m_Values:
     - m_IsExpanded: 1
+      m_ChangeStartPercent:
+        m_IsEnabled: 0
+        m_Value: 1
+    - m_IsExpanded: 0
       m_ChangeStartPercent:
         m_IsEnabled: 0
         m_Value: 1
   m_OverrideStats:
     m_Keys:
     - m_String: max-hp
+    - m_String: Ultimate
     m_Values:
     - m_IsExpanded: 1
+      m_ChangeBase:
+        m_IsEnabled: 0
+        m_Value: 1
+    - m_IsExpanded: 0
       m_ChangeBase:
         m_IsEnabled: 0
         m_Value: 1

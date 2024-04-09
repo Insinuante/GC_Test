@@ -27,12 +27,37 @@ MonoBehaviour:
   m_Attributes:
     m_Attributes:
     - rid: 8048257504811155688
+    - rid: 4194225832590049975
   m_Stats:
     m_Stats:
     - rid: 8048257504811155689
+    - rid: 4194225832590049974
   references:
     version: 2
     RefIds:
+    - rid: 4194225832590049974
+      type: {class: StatItem, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_IsHidden: 0
+        m_Stat: {fileID: 11400000, guid: 29737f7cace34f545842f675da819dfa, type: 2}
+        m_ChangeBase:
+          m_IsEnabled: 0
+          m_Value: 100
+        m_ChangeFormula:
+          m_IsEnabled: 0
+          m_Value: {fileID: 0}
+    - rid: 4194225832590049975
+      type: {class: AttributeItem, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_IsHidden: 0
+        m_Attribute: {fileID: 11400000, guid: b87b47e6dd710574ab478c04e03c85a6, type: 2}
+        m_ChangeStartPercent:
+          m_IsEnabled: 0
+          m_Value: 1
     - rid: 8048257504811155656
       type: {class: GetStringSelfName, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data: 
