@@ -111,93 +111,6 @@ MonoBehaviour:
     - rid: 4194225718669869172
       type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
       data: 
-    - rid: 4194225758905303957
-      type: {class: Task, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
-      data:
-        m_Completion: 0
-        m_IsHidden: 0
-        m_Name:
-          m_Property:
-            rid: 4194225758905303958
-        m_Description:
-          m_Property:
-            rid: 4194225758905303959
-        m_Color:
-          m_Property:
-            rid: 4194225758905303960
-        m_Sprite:
-          m_Property:
-            rid: 4194225758905303961
-        m_UseCounter: 0
-        m_CountTo:
-          m_Property:
-            rid: 4194225758905303962
-        m_ValueFrom:
-          m_Property:
-            rid: 4194225758905303963
-        m_CheckWhen:
-          m_Event:
-            rid: 4194225758905303964
-        m_OnActivate:
-          m_Instructions:
-            m_Instructions: []
-        m_OnDeactivate:
-          m_Instructions:
-            m_Instructions: []
-        m_OnComplete:
-          m_Instructions:
-            m_Instructions:
-            - rid: 4194225764193796151
-        m_OnAbandon:
-          m_Instructions:
-            m_Instructions: []
-        m_OnFail:
-          m_Instructions:
-            m_Instructions: []
-    - rid: 4194225758905303958
-      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-      data:
-        m_Value: 'Investigate where that noise is coming from '
-    - rid: 4194225758905303959
-      type: {class: GetStringTextArea, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-      data:
-        m_Text:
-          m_Text: 
-    - rid: 4194225758905303960
-      type: {class: GetColorColorsWhite, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-      data: 
-    - rid: 4194225758905303961
-      type: {class: GetSpriteNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-      data: 
-    - rid: 4194225758905303962
-      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-      data:
-        m_Value: 3
-    - rid: 4194225758905303963
-      type: {class: GetDecimalGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
-      data:
-        m_Variable:
-          m_TypeID:
-            m_String: number
-          m_Variable: {fileID: 0}
-          m_Name:
-            m_String: 
-            m_ID: 0
-    - rid: 4194225758905303964
-      type: {class: EventOnLateUpdate, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
-      data: 
-    - rid: 4194225764193796151
-      type: {class: InstructionCommonDebugText, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
-      data:
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_Message:
-          m_Property:
-            rid: 4194225764193796152
-    - rid: 4194225764193796152
-      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-      data:
-        m_Value: Radio has succesfully been turned off
     - rid: 4194225830857539685
       type: {class: Task, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
       data:
@@ -484,9 +397,9 @@ MonoBehaviour:
     - rid: 8048257504811155520
       type: {class: TasksTree, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
       data:
-        m_Dirty: 96446
+        m_Dirty: 19656
         m_Data:
-          m_Keys: bae100e67716d49950b3d3362fc9c95bc17c04e6
+          m_Keys: bae100e67716d49950b3d336c17c04e6
           m_Values:
           - m_Id: -436149830
             m_Value:
@@ -497,14 +410,11 @@ MonoBehaviour:
           - m_Id: 919843664
             m_Value:
               rid: 5220484069369053504
-          - m_Id: 1539950895
-            m_Value:
-              rid: 4194225758905303957
           - m_Id: -435913535
             m_Value:
               rid: 4194225830857539685
         m_Nodes:
-          m_Keys: bae100e67716d49950b3d3362fc9c95bc17c04e6
+          m_Keys: bae100e67716d49950b3d336c17c04e6
           m_Values:
           - m_Id: -436149830
             m_Parent: -1
@@ -515,13 +425,10 @@ MonoBehaviour:
           - m_Id: 919843664
             m_Parent: -1
             m_Children: 
-          - m_Id: 1539950895
-            m_Parent: -1
-            m_Children: 
           - m_Id: -435913535
             m_Parent: -1
             m_Children: 
-        m_Roots: 2fc9c95b7716d49950b3d336c17c04e6bae100e6
+        m_Roots: 7716d49950b3d336c17c04e6bae100e6
     - rid: 8048257504811155538
       type: {class: Task, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
       data:
