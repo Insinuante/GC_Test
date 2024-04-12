@@ -185,9 +185,24 @@ MonoBehaviour:
     - rid: 4194225896190902936
       type: {class: GetWeaponMeleeInstance, ns: GameCreator.Runtime.Melee, asm: GameCreator.Runtime.Melee}
       data:
-        m_Weapon: {fileID: 11400000, guid: 687cf228097e72043b4d0066e32abfa1, type: 2}
+        m_Weapon: {fileID: 11400000, guid: bb6c1fee33caa44c28571c017851bc2f, type: 2}
     - rid: 4194225896190902937
       type: {class: GetGameObjectNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 4194225920307363978
+      type: {class: InstructionQuestsTaskComplete, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Journal:
+          m_Property:
+            rid: 4194225920307363979
+        m_Task:
+          m_Quest: {fileID: 11400000, guid: 6c6f68bb5cc5ffa46bddbf6a43f18f06, type: 2}
+          m_TaskId: 919843664
+        m_WaitToComplete: 0
+    - rid: 4194225920307363979
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
       data: 
     - rid: 5220484069369053978
       type: {class: Node, ns: GameCreator.Runtime.Dialogue, asm: GameCreator.Runtime.Dialogue}
@@ -330,7 +345,8 @@ MonoBehaviour:
             m_Instructions: []
         m_OnFinish:
           m_Instructions:
-            m_Instructions: []
+            m_Instructions:
+            - rid: 4194225920307363978
         m_Duration: 0
         m_Timeout:
           m_Property:

@@ -131,7 +131,7 @@ MonoBehaviour:
       type: {class: ComboItem, ns: GameCreator.Runtime.Melee, asm: GameCreator.Runtime.Melee}
       data:
         m_IsDisabled: 0
-        m_Key: 0
+        m_Key: 1
         m_Mode: 0
         m_When: 1
         m_AutoRelease: 0

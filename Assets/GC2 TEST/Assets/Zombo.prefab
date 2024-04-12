@@ -3186,7 +3186,6 @@ GameObject:
   - component: {fileID: 1029337051589350040}
   - component: {fileID: 5431322330067932586}
   - component: {fileID: 5286497027254294504}
-  - component: {fileID: -92612140724651561}
   m_Layer: 0
   m_Name: Zombo
   m_TagString: Untagged
@@ -3413,8 +3412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Instructions:
-    m_Instructions:
-    - rid: 4194225894858948663
+    m_Instructions: []
   m_TriggerEvent:
     rid: 4194225831449723158
   references:
@@ -3422,64 +3420,6 @@ MonoBehaviour:
     RefIds:
     - rid: 4194225831449723158
       type: {class: EventOnStart, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
-      data: 
-    - rid: 4194225894858948663
-      type: {class: InstructionCharacterAddCandidateTarget, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
-      data:
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_Character:
-          m_Property:
-            rid: 4194225894858948666
-        m_Target:
-          m_Property:
-            rid: 4194225894858948667
-    - rid: 4194225894858948666
-      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-      data: 
-    - rid: 4194225894858948667
-      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
-      data: 
---- !u!114 &-92612140724651561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9092463347852170781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 721fb82976bce47f38247178301b66c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Branches:
-    m_Branches:
-    - rid: 4194225894858948685
-  references:
-    version: 2
-    RefIds:
-    - rid: 4194225894858948685
-      type: {class: Branch, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
-      data:
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_Description: 
-        m_ConditionList:
-          m_Conditions:
-          - rid: 4194225894858948686
-        m_InstructionList:
-          m_Instructions: []
-    - rid: 4194225894858948686
-      type: {class: ConditionCharacterIsPlayer, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
-      data:
-        m_Breakpoint: 0
-        m_IsEnabled: 1
-        m_Sign: 1
-        m_Character:
-          m_Property:
-            rid: 4194225894858948687
-    - rid: 4194225894858948687
-      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
       data: 
 --- !u!1 &9110460639694979483
 GameObject:

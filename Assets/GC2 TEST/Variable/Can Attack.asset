@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 307520f1e07347338fe0f7cef607016a, type: 3}
-  m_Name: Global Variables 1
+  m_Name: Can Attack
   m_EditorClassIdentifier: 
   m_SaveUniqueID:
     m_Save:
@@ -26,4 +26,20 @@ MonoBehaviour:
     - rid: 4194225826398208099
       type: {class: NameList, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
       data:
-        m_Source: []
+        m_Source:
+        - rid: 4194225920307363845
+    - rid: 4194225920307363845
+      type: {class: NameVariable, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value:
+          rid: 4194225920307364174
+        m_Name:
+          m_String: CanHit
+    - rid: 4194225920307364174
+      type: {class: ValueBool, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Value: 0
