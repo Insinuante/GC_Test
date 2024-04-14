@@ -22,6 +22,8 @@ MonoBehaviour:
       data:
         m_Items:
           m_Items:
+          - {fileID: 11400000, guid: 3b29c8b306aa3ee46b943daa2b29b635, type: 2}
+          - {fileID: 11400000, guid: 28e2c78af576db341be78f0166c7d83f, type: 2}
           - {fileID: 11400000, guid: cab9dfd64bc51b446ae7fe80b433cd9a, type: 2}
           - {fileID: 11400000, guid: 5be14ee89b71c8c45a365f3f6bb5dc45, type: 2}
           - {fileID: 11400000, guid: c534738dda5903f4b8de4d7f63aac248, type: 2}
