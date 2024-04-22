@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129038e8166d74031a86b8545896ab42, type: 3}
+  m_Name: My Skeleton
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_CollisionDetection: 0
+  m_Volumes:
+    rid: 4194226143965479114
+  <EditorModelPath>k__BackingField: 
+  references:
+    version: 2
+    RefIds:
+    - rid: 4194226143965479114
+      type: {class: Volumes, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data:
+        m_Volumes: []
