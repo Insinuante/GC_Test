@@ -117,7 +117,7 @@ MonoBehaviour:
         m_Value:
           rid: 7763694622961041879
         m_Name:
-          m_String: Melee-Sword-Visual
+          m_String: Melee-Shield-Visual
     - rid: 7763694622961041879
       type: {class: ValueBool, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
       data:
