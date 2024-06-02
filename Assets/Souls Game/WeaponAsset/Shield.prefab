@@ -350,7 +350,7 @@ GameObject:
   - component: {fileID: 1344100405}
   - component: {fileID: 55458789741394435}
   m_Layer: 6
-  m_Name: Shield_Player
+  m_Name: Shield
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -486,12 +486,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Instructions:
-    m_Instructions: []
+    m_Instructions:
+    - rid: 7279939222976593924
   m_TriggerEvent:
     rid: 7763694622961041902
   references:
     version: 2
     RefIds:
+    - rid: 7279939222976593924
+      type: {class: InstructionLogicRunConditions, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Conditions:
+          m_Property:
+            rid: 7279939222976593925
+        m_WaitToFinish: 1
+    - rid: 7279939222976593925
+      type: {class: GetGameObjectConditions, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Conditions: {fileID: 6550727477152911789}
     - rid: 7763694622961041902
       type: {class: EventOnVariableGlobalNameChange, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
       data:
@@ -499,5 +513,5 @@ MonoBehaviour:
           m_Variable: {fileID: 11400000, guid: 426cc95dcd7507f48b5124773621b2f7, type: 2}
           m_When: 1
           m_Name:
-            m_String: Melee-Shield
-            m_ID: -1221989664
+            m_String: Melee-Shield-Visual
+            m_ID: -1767240179
