@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: PlayerMaxStamina
   m_EditorClassIdentifier: 
   m_ID:
-    m_String: stat-id
+    m_String: PlayerMaxStamina
   m_Data:
-    m_Base: 0
+    m_Base: 1000
     m_Formula: {fileID: 0}
   m_Info:
     m_Name:

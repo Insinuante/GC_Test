@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: PlayerHP
   m_EditorClassIdentifier: 
   m_ID:
-    m_String: attribute-id
+    m_String: Player-HP
   m_Data:
     m_MinValue: 0
-    m_MaxValue: {fileID: 0}
+    m_MaxValue: {fileID: 11400000, guid: 8c27db28a82ef4c45bf8b545e564149b, type: 2}
     m_StartPercent: 1
   m_Info:
     m_Name:

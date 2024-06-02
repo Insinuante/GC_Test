@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: PlayerMP
   m_EditorClassIdentifier: 
   m_ID:
-    m_String: attribute-id
+    m_String: Player-Mp
   m_Data:
     m_MinValue: 0
-    m_MaxValue: {fileID: 0}
+    m_MaxValue: {fileID: 11400000, guid: ae32706c6a43a9647836ab1126556ada, type: 2}
     m_StartPercent: 1
   m_Info:
     m_Name:

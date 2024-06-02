@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: PlayerStamina
   m_EditorClassIdentifier: 
   m_ID:
-    m_String: attribute-id
+    m_String: Player-Stamina
   m_Data:
     m_MinValue: 0
-    m_MaxValue: {fileID: 0}
+    m_MaxValue: {fileID: 11400000, guid: 312d5a6ca69e4814fa9bbc2c3862d242, type: 2}
     m_StartPercent: 1
   m_Info:
     m_Name:
@@ -42,7 +42,7 @@ MonoBehaviour:
     - rid: 7763694622961041599
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
-        m_Value: ATT
+        m_Value: STAM
     - rid: 7763694622961041600
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
